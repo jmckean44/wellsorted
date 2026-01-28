@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../img/logo.svg';
+---
+
+<header class="navbar is-transparent" role="banner">
+	<div class="container">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="/" aria-label="Right Order home">
+				<Image src={logo} alt="Right Order" width={140} height={32} />
+			</a>
+			<button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="primaryNav">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+		</div>
+		<div id="primaryNav" class="navbar-menu">
+			<div class="navbar-end">
+				<a class="navbar-item" href="#services">SERVICES</a>
+				<a class="navbar-item" href="#about">ABOUT</a>
+				<a class="navbar-item" href="#testimonials">TESTIMONIALS</a>
+				<div class="navbar-item">
+					<a class="button is-link" href="#contact">ASK A QUESTION</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

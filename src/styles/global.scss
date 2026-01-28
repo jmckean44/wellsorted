@@ -1,0 +1,133 @@
+@use 'bulma/sass' as * with (
+	// Brand + colors
+	$primary: #2c6bed,
+	$link: #2c6bed,
+	$info: #3b82f6,
+	$success: #22c55e,
+	$warning: #f59e0b,
+	$danger: #ef4444,
+	$light: #f7f9ff,
+	$dark: #0f172a,
+
+	// Typography
+	$family-sans-serif: ('Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif),
+	$size-1: 3rem,
+	$size-2: 2.5rem,
+	$size-3: 2rem,
+	$size-4: 1.5rem,
+	$size-5: 1.25rem,
+	$size-6: 1rem,
+	$size-7: 0.875rem,
+	$weight-light: 300,
+	$weight-normal: 400,
+	$weight-medium: 500,
+	$weight-semibold: 600,
+	$weight-bold: 700,
+	$body-size: 1rem,
+	$body-line-height: 1.6,
+	$title-weight: 700,
+	$subtitle-weight: 500,
+
+	// Layout + spacing
+	$gap: 24px
+);
+
+:root {
+	--brand-accent: #2c6bed;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: 'SteelfishRegular';
+	src: url('../fonts/steelfish.eot');
+	src:
+		url('../fonts/steelfish.eot?iefix') format('embedded-opentype'),
+		url('../fonts/steelfish.woff') format('woff'),
+		url('../fonts/steelfish.ttf') format('truetype'),
+		url('../fonts/steelfish.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+@font-face {
+	font-family: 'CalibriRegular';
+	src:
+		url('../fonts/calibri.eot') format('embedded-opentype'),
+		url('../fonts/calibri.woff') format('woff'),
+		url('../fonts/calibri.ttf') format('truetype'),
+		url('../fonts/calibri.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'CalibriItalic';
+	src:
+		url('../fonts/calibrii.eot') format('embedded-opentype'),
+		url('../fonts/calibrii.woff') format('woff'),
+		url('../fonts/calibrii.ttf') format('truetype'),
+		url('../fonts/calibrii.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'CalibriBold';
+	src:
+		url('../fonts/calibrib.eot') format('embedded-opentype'),
+		url('../fonts/calibrib.woff') format('woff'),
+		url('../fonts/calibrib.ttf') format('truetype'),
+		url('../fonts/calibrib.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $family-sans-serif;
+
+	margin: 0 0 1.5rem;
+	line-height: 1;
+	letter-spacing: 1px;
+}
+
+.navbar.is-transparent {
+	background: transparent;
+}
+
+.hero.has-background-gradient {
+	background: linear-gradient(135deg, #f7f9ff 0%, #ffffff 45%, #f1f5ff 100%);
+}
+
+.hero .hero-body {
+	padding-top: clamp(3rem, 6vw, 6rem);
+	padding-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+.section.is-spaced {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.footer {
+	border-top: 1px solid #e6e8f0;
+}
+
+.tag {
+	padding-left: 0;
+	border: 1px solid var(--brand-accent);
+}
+
+.navbar-item {
+	font-family: 'SteelfishRegular';
+	font-size: min(max(3.5rem, 6vw), 36px);
+	font-weight: bold;
+}

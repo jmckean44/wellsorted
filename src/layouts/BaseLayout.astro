@@ -1,0 +1,97 @@
+---
+import '../styles/global.scss';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const {
+	title = 'Right Order',
+	description = 'A trusted digital document and file organization support service for individuals and small businesses',
+	lang = 'en',
+	canonical,
+	image,
+	imageAlt = '',
+	siteName = 'Right Order',
+	type = 'website',
+	noindex = false,
+	keywords,
+	author,
+	twitterHandle,
+	themeColor = '#2c6bed',
+	locale = 'en_US',
+} = Astro.props;
+
+const canonicalUrl = canonical ?? (Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url);
+const robotsContent = noindex ? 'noindex, nofollow' : 'index, follow';
+const twitterCard = image ? 'summary_large_image' : 'summary';
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		{keywords && <meta name="keywords" content={keywords} />}
+		{author && <meta name="author" content={author} />}
+		<meta name="robots" content={robotsContent} />
+		<meta name="googlebot" content={robotsContent} />
+		<meta name="referrer" content="strict-origin-when-cross-origin" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="theme-color" content={themeColor} />
+		<meta name="color-scheme" content="light dark" />
+
+		<title>{title}</title>
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+		<meta property="og:site_name" content={siteName} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:locale" content={locale} />
+		{image && <meta property="og:image" content={image} />}
+		{imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+
+		<meta name="twitter:card" content={twitterCard} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		{twitterHandle && <meta name="twitter:site" content={twitterHandle} />}
+		{image && <meta name="twitter:image" content={image} />}
+		{imageAlt && <meta name="twitter:image:alt" content={imageAlt} />}
+
+		<slot name="head" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		<Header />
+		<main id="main-content">
+			<slot />
+		</main>
+		<Footer />
+		<slot name="body-end" />
+		<style is:global>
+			.skip-link {
+				position: absolute;
+				top: 0.5rem;
+				left: 0.5rem;
+				transform: translateY(-150%);
+				background: #1f2933;
+				color: #ffffff;
+				padding: 0.75rem 1rem;
+				border-radius: 999px;
+				z-index: 9999;
+				text-decoration: none;
+			}
+			.skip-link:focus {
+				transform: translateY(0);
+				outline: 2px solid #ffffff;
+				outline-offset: 3px;
+			}
+		</style>
+	</body>
+</html>

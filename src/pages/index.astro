@@ -1,17 +1,163 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Right Order" description="A trusted digital document and file organization support service for individuals and small businesses">
+	<section class="hero is-medium has-background-gradient">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column is-6">
+						<p class="tag is-link is-light">LOCAL • TRUSTED • RELIABLE</p>
+						<h1 class="title is-1">Help with sorting our massive amount of digital documents</h1>
+						<p class="subtitle is-4">Clear, calm digital organization — for people who feel overwhelmed by their files, photos, and accounts.</p>
+						<ul>
+							<li>Short intro call Agree on scope Organize together or remotely Simple documentation delivered</li>
+							<li>Organizing files, photos, and accounts</li>
+							<li>Passwords, recovery plans, and digital safety</li>
+							<li>Subscription and account cleanups</li>
+							<li>Reviewing quotes, plans, or big decisions</li>
+							<li>Translating confusing information into plain language</li>
+						</ul>
+						<div class="buttons">
+							<a class="button is-link is-medium" href="#contact">Schedule a call</a>
+							<a class="button is-light is-medium" href="#services">View services</a>
+						</div>
+					</div>
+
+					<div class="column is-6">
+						<div class="column is-5 is-offset-1">
+							<div class="box">
+								<p class="has-text-weight-semibold">Next available: Today 2:00 PM</p>
+								<p class="mt-2">Average response time</p>
+								<p class="title is-3">&lt; 15 minutes</p>
+								<p class="mt-4">Trusted by 120+ local businesses</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="services" class="section is-spaced">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column is-4">
+						<h2 class="title is-2">Services</h2>
+						<p class="subtitle is-5">Flexible plans for growing teams.</p>
+					</div>
+					<div class="column">
+						<div class="columns is-multiline">
+							<div class="column is-4">
+								<div class="box">
+									<p class="title is-5">Managed Support</p>
+									<p>Proactive monitoring and rapid response for critical needs.</p>
+								</div>
+							</div>
+							<div class="column is-4">
+								<div class="box">
+									<p class="title is-5">On-Site Visits</p>
+									<p>Scheduled maintenance and in-person help when it matters.</p>
+								</div>
+							</div>
+							<div class="column is-4">
+								<div class="box">
+									<p class="title is-5">Project Delivery</p>
+									<p>Plan, build, and launch upgrades on time and on budget.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about" class="section is-spaced has-background-light">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-5">
+						<h2 class="title is-2">About Right Order</h2>
+						<p class="subtitle is-5">A small team with a big impact.</p>
+					</div>
+					<div class="column">
+						<p>We specialize in keeping operations steady, communicating clearly, and taking ownership of every request. You get dedicated service, clear timelines, and honest answers.</p>
+						<div class="columns mt-5">
+							<div class="column">
+								<p class="title is-4">12+</p>
+								<p class="is-size-6">Years supporting local teams</p>
+							</div>
+							<div class="column">
+								<p class="title is-4">24/7</p>
+								<p class="is-size-6">Critical response coverage</p>
+							</div>
+							<div class="column">
+								<p class="title is-4">100%</p>
+								<p class="is-size-6">Transparent reporting</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials" class="section is-spaced">
+			<div class="container">
+				<h2 class="title is-2">What clients say</h2>
+				<div class="columns mt-5">
+					<div class="column">
+						<div class="box">
+							<p class="has-text-weight-semibold">“They respond faster than anyone.”</p>
+							<p class="mt-3 is-size-7">— Taylor, Retail Owner</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box">
+							<p class="has-text-weight-semibold">“Reliable, clear communication, no surprises.”</p>
+							<p class="mt-3 is-size-7">— Morgan, Operations Lead</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box">
+							<p class="has-text-weight-semibold">“They feel like part of our team.”</p>
+							<p class="mt-3 is-size-7">— Sam, Founder</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section is-spaced has-background-link-light">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column is-6">
+						<h2 class="title is-2">Let’s talk</h2>
+						<p class="subtitle is-5">Tell us what you need and we’ll respond within 15 minutes.</p>
+					</div>
+					<div class="column is-5 is-offset-1">
+						<div class="box">
+							<div class="field">
+								<label class="label" for="name">Name</label>
+								<div class="control">
+									<input id="name" class="input" type="text" placeholder="Alex Johnson" />
+								</div>
+							</div>
+							<div class="field">
+								<label class="label" for="email">Email</label>
+								<div class="control">
+									<input id="email" class="input" type="email" placeholder="alex@company.com" />
+								</div>
+							</div>
+							<div class="field">
+								<label class="label" for="message">Message</label>
+								<div class="control">
+									<textarea id="message" class="textarea" rows="3" placeholder="Tell us about your project"></textarea>
+								</div>
+							</div>
+							<button class="button is-link is-fullwidth">Request a quote</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+</BaseLayout>

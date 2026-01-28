@@ -1,0 +1,60 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove first "/"
+
+// Server-side active check - will be enhanced by client-side script
+const isHomepageActive =
+	currentPath === '' || currentPath === '/' || (!currentPath.startsWith('news/') && !currentPath.startsWith('media/') && !currentPath.startsWith('contact/') && !currentPath.startsWith('posts/'));
+
+import ThemeIcon from '../components/ThemeIcon.astro';
+---
+
+<div class="container">
+	<nav>
+		<ul class="nav-links">
+			<li class="home">
+				<a class={isHomepageActive ? 'active' : ''} role="link" aria-label="link to homepage" href="/" data-astro-reload>Work</a>
+			</li>
+			<li class="media">
+				<a class={currentPath === 'about/' ? 'active' : ''} href="/about/" role="link" aria-label="link to media page" data-astro-reload>About</a>
+			</li>
+			<li class="news">
+				<a class={currentPath === 'news/' || currentPath.startsWith('posts/') ? 'active' : ''} href="/news/" role="link" aria-label="link to blog page" data-astro-reload>News</a>
+			</li>
+		</ul>
+	</nav>
+	<ThemeIcon />
+</div>
+
+<script>
+	document.addEventListener('astro:page-load', () => {
+		// Small delay to ensure other scripts have run
+		setTimeout(() => {
+			const body = document.querySelector('body');
+			const homeNavLink = document.querySelector('.nav-links li:first-child a');
+
+			//console.log('Navigation script running...');
+			//console.log('Body ID:', body?.id);
+			//console.log('Body ID type:', typeof body?.id);
+			//console.log('Current pathname:', window.location.pathname);
+
+			if (body && homeNavLink) {
+				// Check: body.id === 'home' (homepage) or body.id === 'project' (project pages)
+				const isHomepageActive = body.id === 'home' || body.id === 'project';
+
+				//console.log('Is homepage active?', isHomepageActive);
+				//console.log('body.id === "home":', body.id === 'home');
+				//console.log('body.id === "project":', body.id === 'project');
+				//console.log('HomeNavLink classes before:', homeNavLink.classList.toString());
+
+				if (isHomepageActive) {
+					homeNavLink.classList.add('active');
+				} else {
+					homeNavLink.classList.remove('active');
+				}
+
+				//console.log('HomeNavLink classes after:', homeNavLink.classList.toString());
+			}
+		}, 100); // 100ms delay
+	});
+</script>
