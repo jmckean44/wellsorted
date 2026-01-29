@@ -1,13 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import logo from '../img/logo.svg';
+import about from '../img/nav-about.svg';
+import services from '../img/nav-services.svg';
+import contact from '../img/nav-contact.svg';
 ---
 
 <header class="navbar is-transparent" role="banner">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item" href="/" aria-label="Right Order home">
-				<Image src={logo} alt="Right Order" width={140} height={32} />
+			<a class="navbar-item" id="logo" href="/" aria-label="Right Order home">
+				<Image src={logo} alt="Right Order" />
 			</a>
 			<button class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="primaryNav">
 				<span aria-hidden="true"></span>
@@ -17,12 +20,9 @@ import logo from '../img/logo.svg';
 		</div>
 		<div id="primaryNav" class="navbar-menu">
 			<div class="navbar-end">
-				<a class="navbar-item" href="#services">SERVICES</a>
-				<a class="navbar-item" href="#about">ABOUT</a>
-				<a class="navbar-item" href="#testimonials">TESTIMONIALS</a>
-				<div class="navbar-item">
-					<a class="button is-link" href="#contact">ASK A QUESTION</a>
-				</div>
+				<a class="navbar-item" href="#about"><Image src={about} alt="About Right Order" /></a>
+				<a class="navbar-item" href="#services"><Image src={services} alt="Right Order Services" /></a>
+				<a class="navbar-item linktoform" href="#contact"><Image src={contact} alt="Contact Right Order" /></a>
 			</div>
 		</div>
 	</div>

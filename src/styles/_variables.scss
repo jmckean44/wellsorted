@@ -1,0 +1,76 @@
+// BREAKPOINTS
+
+$desktop: 1500px;
+$tablet: 1024px;
+$tablet-sm: 800px;
+$mobile: 700px;
+$mobile-sm: 500px;
+
+// THEME
+$theme-clr: #ea8a22;
+$theme-clr-light: #ff8000;
+$dark: #3a3a42;
+$highlight: $theme-clr;
+$highlight-light: #00d36d;
+$container-bg-light: #f4f2f0;
+$container-bg-dark: #2c2c32;
+$nav-clr: #fff;
+$light: rgba(255, 255, 255, 1);
+$bg-clr: #fff;
+$project-image-border: #e5e5e5;
+
+// LOGO
+$logo-desktop: 120px;
+$logo-tablet: 100px;
+$logo-mobile: 70px;
+
+// FONTS
+$font-sans-serif: 'CalibriRegular', Helvetica, Arial, sans-serif;
+$font-sans-serif-bold: 'CalibriBold', Helvetica, Arial, sans-serif;
+$font-serif:
+	'Georgian',
+	Times New Roman,
+	serif;
+$theme-font: 'SteelfishRegular', sans-serif;
+//$font-size: calc(1rem + 0.2vw);
+$font-clr: #2a2a32; // Improved contrast: was #3a3a42, now darker for better readability
+$font-clr-dark: #ffffff;
+$font-clr-muted: #666666; // Better contrast for muted text on light backgrounds
+$font-clr-muted-dark: #c4c4c4; // Better contrast for muted text on dark backgrounds
+$transition-time: all ease 0.5s;
+
+// HEADER
+$header-height-desktop: 90px;
+$header-height-tablet: 75px;
+$header-height-mobile: 60px;
+$header-bg-clr: rgba(255, 255, 255, 0.9);
+
+// FOOTER
+$footer-bg-clr: #f9f9f9;
+
+/* GAPS */
+$gap-sm: 1.5em;
+$gap-med: 2em;
+$gap-lrg: 2.5em;
+$gap-xlrg: 3em;
+
+// CONTAINER PADDING
+$container-padding: 1.25rem;
+$container-padding-mobile: 1.25rem;
+
+// CSS custom properties from SASS variables (must be at end after all variables are defined)
+:root {
+	--theme-clr: #{$theme-clr};
+	--theme-clr-light: #{$theme-clr-light};
+	--dark: #{$dark};
+	--highlight: #{$highlight};
+	--highlight-light: #{$highlight-light};
+	--container-bg-light: #{$container-bg-light};
+	--container-bg-dark: #{$container-bg-dark};
+	--project-image-border: #{$project-image-border};
+	--font-clr: #{$font-clr};
+	--font-clr-dark: #{$font-clr-dark};
+	--font-clr-muted: #{$font-clr-muted};
+	--font-clr-muted-dark: #{$font-clr-muted-dark};
+	--color-text-muted: #{$font-clr-muted}; /* For radix components compatibility */
+}

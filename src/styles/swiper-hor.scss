@@ -1,0 +1,62 @@
+@use 'swiper/css';
+@use 'swiper/css/pagination';
+@use 'variables' as var;
+
+:root {
+	.swiper {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding: 1rem 1.3rem 6rem 1.3rem !important;
+		margin-bottom: 3rem;
+		height: auto !important;
+	}
+
+	.swiper-wrapper {
+		align-items: stretch;
+		height: auto !important;
+	}
+
+	.swiper-slide {
+		display: flex;
+		flex-direction: column;
+		padding: 2.5rem 3rem;
+		color: #4360a0;
+		background: #f9f9f9;
+		height: auto !important;
+		transition: height 0.3s ease;
+	}
+
+	.swiper-slide p {
+		text-align: left;
+	}
+
+	.swiper-slide p:last-child {
+		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	.swiper-slide p:last-child {
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	.swiper-pagination .swiper-pagination-bullet {
+		background: #fff !important;
+		border: 1px #4360a0 solid !important;
+		width: 12px !important;
+		height: 12px !important;
+		margin: 0.5rem !important;
+		opacity: 1;
+	}
+
+	.swiper-pagination .swiper-pagination-bullet-active {
+		background: #4360a0 !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.swiper-slide {
+		padding: 2.5rem 1.75rem !important;
+	}
+}
