@@ -37,7 +37,11 @@ $secondary: #c226dd;
 $highlight: #ff5000;
 
 .highlight {
-	color: $info;
+	color: $highlight;
+}
+
+.secondary {
+	color: $secondary;
 }
 
 // .eyebrow {
@@ -166,7 +170,7 @@ h6 {
 }
 
 h1 {
-	font-size: min(max(3rem, 4vw), 60px);
+	font-size: min(max(2.7rem, 4vw), 60px);
 }
 
 h1.arrow {
