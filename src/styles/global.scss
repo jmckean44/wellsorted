@@ -225,7 +225,7 @@ ol li {
 }
 
 header {
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 strong {
@@ -363,6 +363,10 @@ img {
 
 .navbar-item.linktoform {
 	color: $info;
+}
+
+.navbar-item#logo {
+	padding: 0;
 }
 
 .navbar-item#logo img,
