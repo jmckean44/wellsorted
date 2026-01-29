@@ -1,13 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import node from '@astrojs/node';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://rightorder.ca',
+	site: 'https://wellsorted.ca',
 	output: 'static',
 	//outDir: 'dist',
 	prefetch: true,
@@ -22,7 +21,4 @@ export default defineConfig({
 		responsiveStyles: true,
 		layout: 'full-width',
 	},
-	adapter: node({
-		mode: 'standalone',
-	}),
 });
