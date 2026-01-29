@@ -4,51 +4,24 @@ import '../styles/form.scss';
 import '../styles/swiper-hor.scss';
 import { Image } from 'astro:assets';
 import files1 from '../img/files-1.webp';
+import call from '../img/discovery-call.webp';
 ---
 
-<BaseLayout title="Right Order" description="A trusted digital document and file organization support service for individuals and small businesses">
-	<section id="about" class="section is-spaced">
-		<!-- <div class="container">
-			<div class="columns">
-				<div class="column is-5">
-					<h1 class="title is-2">About Right Order</h1>
-					<p class="subtitle is-5">A small team with a big impact.</p>
-				</div>
-				<div class="column">
-					<p>We specialize in keeping operations steady, communicating clearly, and taking ownership of every request. You get dedicated service, clear timelines, and honest answers.</p>
-					<div class="columns mt-5">
-						<div class="column">
-							<p class="title is-4">12+</p>
-							<p class="is-size-6">Years supporting local teams</p>
-						</div>
-						<div class="column">
-							<p class="title is-4">24/7</p>
-							<p class="is-size-6">Critical response coverage</p>
-						</div>
-						<div class="column">
-							<p class="title is-4">100%</p>
-							<p class="is-size-6">Transparent reporting</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
+<BaseLayout
+	title="Well Sorted"
+	description="Well Sorted is a local, trusted digital document and file organization support service for individuals and small businesses"
+	keywords="digital document organization, file organization, photo organization, account management, password help, subscription cleanup, digital safety, small business support, personal admin help, Well Sorted">
+	<section id="about" class="section is-spaced enable-trig">
 		<div class="container">
 			<div class="columns is-vcentered">
 				<div class="column is-8">
-					<p class="eyebrow">ABOUT <strong>RIGHT ORDER</strong></p>
-					<h2>Digital document organization. <br />In the <strong><strong><em class="highlight">right order</em></strong></strong>.</h2>
+					<p class="eyebrow">LOCAL • TRUSTED • RELIABLE</p>
+					<h1>
+						<strong class="highlight">Well Sorted</strong> is a local, trusted, digital document and file organization support service for individuals and small businesses.
+					</h1>
 					<p class="subtitle is-4">
 						<strong>Practical help for people and small businesses who feel overwhelmed by the growing number of digital files, photos, and account management security.</strong>
 					</p>
-					<ul>
-						<li>Short intro call Agree on scope Organize together or remotely Simple documentation delivered</li>
-						<li>Organizing files, photos, and accounts</li>
-						<li>Passwords, recovery plans, and digital safety</li>
-						<li>Subscription and account cleanups</li>
-						<li>Reviewing quotes, plans, or big decisions</li>
-						<li>Translating confusing information into plain language</li>
-					</ul>
 				</div>
 				<div class="column is-4">
 					<div id="animation" class="animation">
@@ -95,67 +68,78 @@ import files1 from '../img/files-1.webp';
 				</div>
 			</div>
 		</div>
+		<!-- 
+		<div class="container">
+			<div class="columns">
+				<div class="column is-5">
+					<h1 class="title is-2">About Well Sorted</h1>
+					<p class="subtitle is-5">A small team with a big impact.</p>
+				</div>
+				<div class="column">
+					<p>We specialize in keeping operations steady, communicating clearly, and taking ownership of every request. You get dedicated service, clear timelines, and honest answers.</p>
+					<div class="columns mt-5">
+						<div class="column">
+							<p class="title is-4">12+</p>
+							<p class="is-size-6">Years supporting local teams</p>
+						</div>
+						<div class="column">
+							<p class="title is-4">24/7</p>
+							<p class="is-size-6">Critical response coverage</p>
+						</div>
+						<div class="column">
+							<p class="title is-4">100%</p>
+							<p class="is-size-6">Transparent reporting</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
 	</section>
 
-	<section id="intro" class="section is-spaced">
+	<section id="intro" class="section is-spaced enable-trig">
 		<div class="container">
 			<div class="columns is-vcentered">
-				<div class="column is-7">
+				<div class="column is-12">
 					<p class="eyebrow">LOCAL • TRUSTED • RELIABLE</p>
-					<h2>Digital document organization.<br />In the <strong><em>right order</em></strong>.</h2>
+					<h2>Digital <strong class="highlight">Facts</strong>:</h2>
+					<h3>Digital clutter adds up fast.</h3>
+					<p class="subtitle is-4">Most people juggle a lifetime of digital files and information across:</p>
+
 					<p class="subtitle is-4">
-						<strong>Practical help for people and small businesses who feel overwhelmed by the growing number of digital files, photos, and security related account management.</strong>
+						<strong>As of 2025–2026, the average person has between 1,600 and 3,000 photos stored on their smartphone, with Millennials holding the highest average at over 2,500. </strong>
 					</p>
+
 					<ul>
-						<li>Short intro call Agree on scope Organize together or remotely Simple documentation delivered</li>
-						<li>Organizing files, photos, and accounts</li>
-						<li>Passwords, recovery plans, and digital safety</li>
-						<li>Subscription and account cleanups</li>
-						<li>Reviewing quotes, plans, or big decisions</li>
-						<li>Translating confusing information into plain language</li>
+						<li>devices</li>
+						<li>cloud services</li>
+						<li>old drives</li>
+						<li>forgotten folders</li>
+						<li>email attachments</li>
+						<li>duplicate photo libraries</li>
+						<li>scattered downloads</li>
 					</ul>
-				</div>
-				<div class="column is-5">
-					<div id="animation" class="animation">
-						<svg viewBox="0 0 520 360" role="img" aria-label="Magnifying glass scanning documents">
-							<defs>
-								<clipPath id="doc-clip-1">
-									<rect x="60" y="60" width="160" height="200" rx="6"></rect>
-								</clipPath>
-								<clipPath id="doc-clip-2">
-									<rect x="190" y="90" width="170" height="210" rx="6"></rect>
-								</clipPath>
-								<clipPath id="doc-clip-3">
-									<rect x="320" y="70" width="150" height="220" rx="6"></rect>
-								</clipPath>
-							</defs>
 
-							<g class="doc-group" clip-path="url(#doc-clip-1)">
-								<rect class="doc doc-1" x="60" y="60" width="160" height="200" rx="3"></rect>
-								<rect class="doc-line" x="85" y="104" width="110" height="4" rx="2"></rect>
-								<rect class="doc-line" x="85" y="122" width="90" height="4" rx="2"></rect>
-								<rect class="doc-line" x="85" y="140" width="120" height="4" rx="2"></rect>
-							</g>
+					<p class="subtitle is-4">If this sounds familiar:</p>
 
-							<g class="doc-group" clip-path="url(#doc-clip-2)">
-								<rect class="doc doc-2" x="190" y="90" width="170" height="210" rx="3"></rect>
-								<rect class="doc-line" x="220" y="142" width="110" height="4" rx="2"></rect>
-								<rect class="doc-line" x="220" y="160" width="90" height="4" rx="2"></rect>
-								<rect class="doc-line" x="220" y="178" width="120" height="4" rx="2"></rect>
-							</g>
+					<ul>
+						<li>You know a file exists, but can’t remember where</li>
+						<li>Your folders have grown without a clear structure</li>
+						<li>Photos and documents are duplicated or buried</li>
+						<li>You worry about “messing something up” if you reorganize</li>
+						<li>You’ve tried to clean things up before, but the system didn’t last</li>
+						<li>You want everything to finally have a place that makes sense</li>
+					</ul>
 
-							<g class="doc-group" clip-path="url(#doc-clip-3)">
-								<rect class="doc doc-3" x="320" y="70" width="150" height="220" rx="3"></rect>
-								<rect class="doc-line" x="350" y="124" width="100" height="4" rx="2"></rect>
-								<rect class="doc-line" x="350" y="142" width="90" height="4" rx="2"></rect>
-								<rect class="doc-line" x="350" y="160" width="110" height="4" rx="2"></rect>
-							</g>
+					<p>
+						You’re not alone.<br />
+						Most people were never taught how to organize a lifetime of digital information.
+					</p>
 
-							<g class="magnifier">
-								<circle class="lens" cx="120" cy="85" r="34"></circle>
-								<rect class="handle" x="113" y="120" width="14" height="72" rx="7"></rect>
-							</g>
-						</svg>
+					<div id="counter">
+						<div><p>Average Number of Photos on Phones</p><h4>2,300</h4></div>
+						<div><p>Average Number of Photos on Computers</p><h4>2,300</h4></div>
+						<div><p>Average Number of Cloud Accounts</p><h4>2,300</h4></div>
+						<div><p>Average Number of Photos on Computers</p><h4>2,300</h4></div>
 					</div>
 				</div>
 			</div>
@@ -169,12 +153,35 @@ import files1 from '../img/files-1.webp';
 		</div>
 	</div>
 
-	<section id="services" class="section is-spaced">
+	<section id="services" class="section is-spaced enable-trig">
 		<div class="container">
 			<div class="columns">
 				<div class="column">
-					<h2>Services</h2>
-					<p class="subtitle is-5">Flexible plans for growing teams.</p>
+					<h2>What I do:</h2>
+					<p class="subtitle is-5">I help people and small businesses get their digital information well sorted—clear, usable, and easy to maintain.</p>
+
+					<padding-x class="subtitle is-5">I can help with:</padding-x>
+					<ul>
+						<li>File and folder organization</li>
+						<li>Cloud storage cleanup (Google Drive, OneDrive, Dropbox, etc.)</li>
+						<li>Photo library cleanup and de-duplication</li>
+						<li>Setting up simple, logical folder structures</li>
+						<li>Naming conventions that stay consistent</li>
+						<li>Reviewing digital decisions and offering calm, unbiased guidance</li>
+					</ul>
+
+					<p>No tech speak.</p>
+					<p>No judgment.</p>
+					<p>Just steady, practical organization.</p>
+
+					<ul>
+						<li>Short intro call Agree on scope Organize together or remotely Simple documentation delivered</li>
+						<li>Organizing files, photos, and accounts</li>
+						<li>Passwords, recovery plans, and digital safety</li>
+						<li>Subscription and account cleanups</li>
+						<li>Reviewing quotes, plans, or big decisions</li>
+						<li>Translating confusing information into plain language</li>
+					</ul>
 				</div>
 			</div>
 
@@ -212,7 +219,7 @@ import files1 from '../img/files-1.webp';
 		</div>
 	</div>
 
-	<section id="search-anim" class="section is-spaced search-anim-section">
+	<section id="search-anim" class="section is-spaced search-anim-section enable-trig">
 		<div class="container">
 			<div class="columns is-vcentered">
 				<div class="column is-6">
@@ -249,69 +256,50 @@ import files1 from '../img/files-1.webp';
 		</div>
 	</div>
 
-	<section id="purpose" class="section is-spaced purpose-section">
+	<section id="purpose" class="section is-spaced purpose-section enable-trig">
 		<div class="container">
 			<div class="columns is-vcentered is-variable is-8">
 				<div class="column is-6">
-					<span class="tag is-rounded is-success is-light purpose-badge">Our Purpose</span>
-					<h2 class="title is-2">Empowering Brands Through <span class="has-text-success">Purposeful Growth</span></h2>
-					<p class="subtitle is-6">
+					<p class="eyebrow">Our Purpose</p>
+					<h2 class="title is-2">How it works</h2>
+					<p>
 						Our goal is to help brands unlock their full digital potential by creating impactful marketing strategies that connect, engage, and convert. We believe growth happens when creativity meets
 						data and purpose.
 					</p>
-					<p class="subtitle is-6">
-						Every campaign we launch is built to deliver measurable results and long-term value — combining strategic insights, automation, and human creativity for real impact.
-					</p>
+					<p>Every campaign we launch is built to deliver measurable results and long-term value — combining strategic insights, automation, and human creativity for real impact.</p>
 					<div class="purpose-list">
 						<div class="purpose-item">
-							<div class="purpose-icon"></div>
+							<div class="purpose-icon">1</div>
 							<div>
-								<p class="has-text-weight-semibold">Strategic Vision</p>
-								<p class="is-size-7">We craft every marketing move around your long-term business goals.</p>
+								<p class="has-text-weight-semibold">Free 20-minute clarity call</p>
+								<p>A relaxed conversation about what feels disorganized and what result you’d like.</p>
 							</div>
 						</div>
 						<div class="purpose-item">
-							<div class="purpose-icon"></div>
+							<div class="purpose-icon">2</div>
 							<div>
-								<p class="has-text-weight-semibold">Sustainable Growth</p>
-								<p class="is-size-7">Our campaigns are designed to generate lasting results, not just quick wins.</p>
+								<p class="has-text-weight-semibold">Define the scope</p>
+								<p>We decide together what needs attention and how hands-on you want me to be.</p>
 							</div>
 						</div>
 						<div class="purpose-item">
-							<div class="purpose-icon"></div>
+							<div class="purpose-icon">3</div>
 							<div>
-								<p class="has-text-weight-semibold">Collaborative Mindset</p>
-								<p class="is-size-7">We work closely with your team to align goals, insights, and execution seamlessly.</p>
+								<p class="has-text-weight-semibold">Get everything well sorted</p>
+								<p>We work together—or through secure remote sessions—to organize, simplify, and structure your digital world.</p>
+							</div>
+						</div>
+						<div class="purpose-item">
+							<div class="purpose-icon">4</div>
+							<div>
+								<p class="has-text-weight-semibold">Clear, simple handover</p>
+								<p>You receive a clean, easy-to-navigate system and a short guide that explains where everything belongs.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="column is-6">
-					<div class="purpose-illustration">
-						<svg viewBox="0 0 520 360" aria-hidden="true" focusable="false">
-							<defs>
-								<linearGradient id="purposeGradient" x1="0" y1="0" x2="1" y2="1">
-									<stop offset="0%" stop-color="#e8f7ff"></stop>
-									<stop offset="100%" stop-color="#f2fff4"></stop>
-								</linearGradient>
-							</defs>
-							<rect x="16" y="16" width="488" height="328" rx="24" fill="url(#purposeGradient)"></rect>
-							<circle cx="360" cy="120" r="60" fill="#dff5e4"></circle>
-							<circle cx="420" cy="210" r="90" fill="#e5f0ff"></circle>
-							<rect x="94" y="120" width="120" height="160" rx="14" fill="#ffffff" stroke="#c7d7f5"></rect>
-							<rect x="110" y="140" width="88" height="12" rx="6" fill="#a3baf0"></rect>
-							<rect x="110" y="164" width="72" height="10" rx="5" fill="#c3d2f8"></rect>
-							<rect x="110" y="186" width="84" height="10" rx="5" fill="#c3d2f8"></rect>
-							<rect x="110" y="208" width="64" height="10" rx="5" fill="#c3d2f8"></rect>
-							<circle cx="166" cy="264" r="26" fill="#f0f8ff" stroke="#c7d7f5"></circle>
-							<path d="M158 264l8 8 14-16" stroke="#22c55e" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-							<circle cx="324" cy="120" r="18" fill="#ffffff" stroke="#b8c7eb"></circle>
-							<circle cx="392" cy="94" r="18" fill="#ffffff" stroke="#b8c7eb"></circle>
-							<circle cx="410" cy="158" r="18" fill="#ffffff" stroke="#b8c7eb"></circle>
-							<circle cx="360" cy="210" r="18" fill="#ffffff" stroke="#b8c7eb"></circle>
-							<path d="M342 132l30-14 18 18 20-28" stroke="#94a3b8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
-						</svg>
-					</div>
+					<Image src={call} class="bdr-radius" alt="Discovery call illustration" />
 				</div>
 			</div>
 			<div class="purpose-process">
@@ -343,105 +331,31 @@ import files1 from '../img/files-1.webp';
 		</div>
 	</section>
 
-	<section id="testimonials" class="section is-spaced">
+	<section id="testimonials" class="section is-spaced enable-trig">
 		<div class="container">
 			<h2 class="title is-2">What People Are Saying</h2>
 			<div class="swiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<p>
-							“For service rendered, I have, for the first time in many years, seen our residents with a smile and happiness after they are dealing with our office, and that is why we do all of this
-							as a Board of Directors. Unlike many Boards, some of our Directors work 70 to 100 hours a week volunteering on the Board. I can honestly say that my stress levels dropped by 50% in the
-							first week after Shiu Pong took over.”
+							“Our goal is to help brands unlock their full digital potential by creating impactful marketing strategies that connect, engage, and convert. We believe growth happens when creativity
+							meets data and purpose.”
 						</p>
-						<p><em>- Sebastian<br />Board of Directors, MTCC1151</em></p>
+						<p class="title">Dave, President</p>
 					</div>
 					<div class="swiper-slide">
 						<p>
-							“In just over the past few months, your management team has resolved many of the outstanding issues from the previous management company, and has continued to diligently service our
-							residents and the community. <span class="testimonial-full" style="display: none;"
-								>Your team of management staffs are professional, proactive and quick in problems solving. Your excellent communication skills and courteous manner are well liked by our owners and
-								contractors. Your dedication to working tirelessly with the board, unit owners, professionals and performing well beyond our expectations has set Shiu Pong as an exemplary model of a
-								truly exceptional manager for our corporation.”</span
-							>
+							“Our goal is to help brands unlock their full digital potential by creating impactful marketing strategies that connect, engage, and convert. We believe growth happens when creativity
+							meets data and purpose.”
 						</p>
-						<button class="show-more-btn">Show More</button>
-						<p><em>- Kamelia Andreeva<br />Board President, TSCC 1768</em></p>
+						<p class="title">Dave, President</p>
 					</div>
 					<div class="swiper-slide">
 						<p>
-							“This again enabled the corporation to achieve a 9% reduction in condo fees in the next fiscal year (2020-2021), and subsequently no increase in condo fees in the 2021-2022 as well
-							2022-2023 annual budgets. There has been a great improvement in the management of the Corporation in the past 4 years. Our community is now very well managed, secure and safe.”
+							“Our goal is to help brands unlock their full digital potential by creating impactful marketing strategies that connect, engage, and convert. We believe growth happens when creativity
+							meets data and purpose.”
 						</p>
-						<p><em>- Vivi Lee, <br />Board President, YRSCC 1325</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>
-							“...thoughtful and thorough manner by which Shiu Pong representatives fulfil their responsibilities and to be impressed by the even-keeled professionalism that Shiu Pong applies to each
-							interaction.”
-						</p>
-						<p><em>- Michael Burke, <br />President, Peel Standard Condominium Corporation No. 879 (Mississauga)</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>
-							“I have worked, on behalf of PCC245, with Larry Nolevski, who is a key member of the Shiu Pong organization for more than twelve years. ..I would strongly recommend potential clients to
-							seriously consider Shiu Pong Management Limited.”
-						</p>
-						<p><em>- Gordon Chan, <br /> Vice President, PCC 245 (Mississauga)</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>
-							“I lived in three condos in the GTA for 10 years. I even served on the board for a condo in the Rosedale area some years ago. I honestly believe that the Shiu Pong Management team at
-							Cosmo 1 in North York is by far the best and the most professional I have ever experienced. <span class="testimonial-full" style="display: none;"
-								>Their day-to-day contact is Olga and she always responds to my email requests within an hour, most often under 30 minutes. These requests range from fixing hot water issue to
-								rescheduling heat pump maintenance. The Shiu Pong team works seamlessly with the board and they share the common goal in serving the community with efficiency at justifiable costs. As
-								a matter of fact, our monthly fee has been one of the lowest in GTA since inception in 2006, currently around 20% lower than the average. Always conscious of the annual budget and
-								reserve fund, the Shiu Pong team and the board members work tirelessly to improve the daily routine facilities. One of which we appreciate very much is the installation of BlueBox
-								Smart Locker for delivery pick up. It is prompt, secure and convenient. And we know for a fact that without such system in place, the situation at a harbourfront condo is total chaos
-								every day. The electronic notice boards installed inside the elevators are also great for communication among management and residents. They accept advertisements and are currently
-								self-sustainable in terms of running cost. The Cosmo team negotiates/renews good deals, and hires dependable, honest contractors for round-the-year as well as emergency maintenance.
-								Dynasty Air System is one good example that has been serving our community for about a decade. So here’s a big THANK YOU to the Shiu Pong team and our board members for jobs well
-								done!”</span
-							>
-						</p>
-						<button class="show-more-btn">Show More</button>
-						<p><em>- T Anada</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>
-							“Shiu Pong Management has been very helpful to me throughout the process of purchasing a unit in a condominium they manage. They have been very responsive by both phone and email, and
-							were especially helpful when I needed a copy of a document within a few hours. Special shoutout to Yan and Larry for their efforts and professionalism.”
-						</p>
-						<p><em>- Charlie Steele</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>“Josh Tang is a wonderful condo manager. He was very helpful and responded to all my inquire efficiently.”</p>
-						<p><em>- Boyuan Shao</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>
-							"I have been a board of director for 7 years in our building and we went through 3 different property management companies during my directorship. Shiu Pong was hired in January 2024 to
-							replace Duka Property Management. In our brief 6 months experience with Shiu Pong, I find them knowledgeable and attentive to our issues. Most importantly I don’t feel being pushed to
-							start any unnecessary and costly projects. <span class="testimonial-full" style="display: none;"
-								>This is particularly important as being an owner, we want to ensure that our maintenance fee is well-spent and will not go wasted. Their recommended contractors also offer competitive
-								and reasonable quotes. Tony and Fanny, their senior managers, always provide us with informative, neutral and useful advice. Samuel, our onsite property manager has so far proven to be
-								responsive, responsible and friendly. In summary, I am impressed and happy that we have selected Shiu Pong Property Management and look forward to continue receiving such excellent
-								service in the coming years."</span
-							>
-						</p>
-						<p><em>- Yours truly,<br />Alan Lee</em></p>
-					</div>
-
-					<div class="swiper-slide">
-						<p>
-							“ I wish to state my appreciation for your team's work yesterday, in helping me quickly clear the final condition. The home sold in 4 days and I think this is in part because everyone
-							knows that Shiupong is a very responsible management company.”
-						</p>
-						<p><em>- Dr. Kathleen Saint-Onge</em></p>
-					</div>
-					<div class="swiper-slide">
-						<p>“Shiu Pong Management rocks, you guys are super. Great team to work with.”</p>
-						<p><em>- Sriram R.</em></p>
+						<p class="title">Dave, President</p>
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
@@ -449,7 +363,7 @@ import files1 from '../img/files-1.webp';
 		</div>
 	</section>
 
-	<section id="contact" class="section is-spaced has-background-link-light">
+	<section id="contact" class="section is-spaced has-background-link-light enable-trig">
 		<div class="container">
 			<div class="columns is-vcentered">
 				<div class="column is-6">
@@ -623,42 +537,49 @@ import files1 from '../img/files-1.webp';
 		}
 	</script>
 
-	<!-- <script>
-document.addEventListener('astro', () => {
-	const form = document.getElementById('form');
-	const submitBtn = form.querySelector('button[type="submit"]');
+	<script is:inline>
+		document.addEventListener('DOMContentLoaded', () => {
+			const counterSection = document.getElementById('counter');
+			let animated = false;
 
-	form.addEventListener('submit', async (e) => {
-		e.preventDefault();
+			function animateCounters() {
+				document.querySelectorAll('#counter h4').forEach((el) => {
+					const targetText = el.textContent.replace(/[^0-9+]/g, '');
+					const target = parseInt(targetText.replace(/\+/g, ''), 10);
+					if (isNaN(target)) return;
 
-		const formData = new FormData(form);
-		formData.append('access_key', 'fadd83ed-0e02-49c4-b043-8171619b1c2e');
+					const original = el.innerHTML; // Save original for final format
+					const duration = 4000;
+					const startTime = performance.now();
 
-		const originalText = submitBtn.textContent;
-
-		submitBtn.textContent = 'Sending...';
-		submitBtn.disabled = true;
-
-		try {
-			const response = await fetch('https://api.web3forms.com/submit', {
-				method: 'POST',
-				body: formData,
-			});
-
-			const data = await response.json();
-
-			if (response.ok) {
-				alert('Success! Your message has been sent.');
-				form.reset();
-			} else {
-				alert('Error: ' + data.message);
+					function animate(now) {
+						const progress = Math.min((now - startTime) / duration, 1);
+						const value = Math.floor(progress * target);
+						el.textContent = value.toLocaleString() + (targetText.includes('+') ? '+' : '');
+						if (progress < 1) {
+							requestAnimationFrame(animate);
+						} else {
+							el.innerHTML = original; // Restore original format (with <sup> etc.)
+						}
+					}
+					requestAnimationFrame(animate);
+				});
 			}
-		} catch (error) {
-			alert('Something went wrong. Please try again.');
-		} finally {
-			submitBtn.textContent = originalText;
-			submitBtn.disabled = false;
-		}
-	});
-</script> -->
+
+			const observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting && !animated) {
+							animateCounters();
+							animated = true;
+							observer.disconnect();
+						}
+					});
+				},
+				{ threshold: 0.3 },
+			);
+
+			if (counterSection) observer.observe(counterSection);
+		});
+	</script>
 </BaseLayout>

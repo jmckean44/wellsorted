@@ -1,4 +1,4 @@
-# Right Order
+# Well Sorted
 
 A small business marketing site built with Astro and Bulma (SCSS).
 
